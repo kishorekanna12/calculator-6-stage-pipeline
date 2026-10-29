@@ -6,24 +6,14 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
-def multiply(a, b):
-    return a * b
-
-def divide(a, b):
-    if b == 0:
-        return "Error: Division by zero"
-    return a / b
-
 def menu():
-    print("\n--- Menu-Driven Calculator (v2.0.0) ---")
+    print("\n--- Menu-Driven Calculator (v1.0.0) ---")
     print("1. Addition")
     print("2. Subtraction")
-    print("3. Multiplication")
-    print("4. Division")
-    print("5. Exit")
+    print("3. Exit")
     
-    choice = input("Enter choice (1-5): ")
-    if choice == '5':
+    choice = input("Enter choice (1-3): ")
+    if choice == '3':
         sys.exit(0)
         
     num1 = float(input("Enter first number: "))
@@ -33,10 +23,6 @@ def menu():
         print(f"Result: {add(num1, num2)}")
     elif choice == '2':
         print(f"Result: {subtract(num1, num2)}")
-    elif choice == '3':
-        print(f"Result: {multiply(num1, num2)}")
-    elif choice == '4':
-        print(f"Result: {divide(num1, num2)}")
     else:
         print("Invalid choice")
 
