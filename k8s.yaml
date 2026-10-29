@@ -16,7 +16,8 @@ Spec:
     spec:
       containers:
       - name: calculator
-        image: YOUR_DOCKER_USERNAME/calculator:v1.0.0
+                image: YOUR_DOCKER_USERNAME/calculator:v2.0.0
+
         ports:
         - containerPort: 80
 ---
